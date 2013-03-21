@@ -19,3 +19,45 @@
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+/*
+.bg {
+  margin-top: 5px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url('/images/cloud1.png') 0 0, url('/images/cloud2.png') 40% 0 no-repeat;
+  -webkit-animation: moving-images 400s ease infinite;
+     -moz-animation: moving-images 400s ease infinite;
+       -o-animation: moving-images 400s ease infinite;
+          animation: moving-images 400s ease infinite;
+  max-height: 150px;
+}
+
+@keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+@-moz-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+@-webkit-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+@-o-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-9999px;}
+  100% {left:0;}
+}
+*/
+header[role="banner"] {
+	border-top: 10px solid #C74E26;
+	border-bottom: 3px solid #FF4D00;
+
+}
