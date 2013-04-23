@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Ellison Leão]]></title>
-  <link href="http://ellisonleao.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Game Dev | Ellison Leão]]></title>
+  <link href="http://ellisonleao.github.com/blog/categories/game-dev/atom.xml" rel="self"/>
   <link href="http://ellisonleao.github.com/"/>
   <updated>2013-04-23T02:31:45-03:00</updated>
   <id>http://ellisonleao.github.com/</id>
@@ -12,34 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World (Again!)]]></title>
-    <link href="http://ellisonleao.github.com/blog/2013/hello-world-again/"/>
-    <updated>2013-03-18T01:38:00-03:00</updated>
-    <id>http://ellisonleao.github.com/blog/2013/hello-world-again</id>
-    <content type="html"><![CDATA[<p>Hi People! it&#8217;s been a long time since my last post on the older blog
-and i&#8217;m glad to say that the i&#8217;m back on blogging about
-music, game developing and web development and other cool things. Hope you keep
-visiting the blog or signing the feed. Stay tuned for the next posts!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The hope of our childhood isn't lost (yet)]]></title>
-    <link href="http://ellisonleao.github.com/blog/2012/a-infancia-ainda-nao-esta-perdida/"/>
-    <updated>2012-04-16T12:33:00-03:00</updated>
-    <id>http://ellisonleao.github.com/blog/2012/a-infancia-ainda-nao-esta-perdida</id>
-    <content type="html"><![CDATA[<p>Monday is usually the day you wake a little bit more lazier, hoping to spend a little more time in bed, thinking why can&#8217;t it be Friday to sleep a little more time.</p>
-
-<p>Surprisingly, when I arrived at work I came across to a really fantastic notice. A notice that encouraged that Monday routine and made me think of my childhood, of how I loved to create things and how I imagine doing adult things. On that notice I saw a boy of nine years old creating an analogic arcade just using cardboard boxes. He created everything from the box that manages the money of the chips ($ 1 per card) and so-called fun passes (allowing a total of 500 shots for $ 2), to the games. The boy who helps his father in his mechanic garage, was discovered by a customer of the shop, who created a Facebook event and a Crowd Funding movement  to raise money for his college. The boy&#8217;s name is Caine and this short movie below was created to show all of this little boy&#8217;s geniality. Check below</p>
-
-<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/40000072 "></iframe></div>
-
-
-<p><a href="http://www.updateordie.com/2012/04/11/o-menino-que-montou-um-fliperama-com-caixas-de-papelao/">Saw it here</a></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Não eram apenas copos rosas]]></title>
@@ -58,7 +30,7 @@ Após o keynote de Will Wright, o tema surgira e todos que estavam lá ficaram a
 <p>Infinito, ciclo da vida, morte e ressureição. Esses foram as palavras que palpitavam na grande sala onde os grupos se reuniam para pensar como seria fazer um jogo com estes temas.
 Era a hora do brainstorm inicial.
 Nosso grupo ficou cerca de 2 horas jogando idéias num papel, misturando vários elementos e mecânicas, até que, chegamos num  consenso. Contaríamos a saga de um alquimista em busca da vida eterna.
-Na história, o alquimista Frangoi consegue transitar em 2 mundos paralelos (real e espiritual) e tem de percorrer um longo percurso, resolvendo enigmas e combatendo inimigos pelo caminho. Idéias concretizadas, fomos para o planejamento de o que daria pra fazer nessas 48 horas. Uns achavam que não sairíamos de um concept, outros já achavam que dava pra completar uma fase inteira. E ficou na base do &#8220;vamo ver no que vai dar&#8221;. Começando as atividades, resolvemos utilizar como ferramentas, o excelente framework <a href="http://www.melonjs.org">MelonJS</a>, já que tínhamos resolvido fazer nosso jogo em HTML5.</p>
+Na história, o alquimista Frangoi consegue transitar em 2 mundos paralelos (real e espiritual) e tem de percorrer um longo percurso, resolvendo enigmas e combatendo inimigos pelo caminho. Idéias concretizadas, fomos para o planejamento de o que daria pra fazer nessas 48 horas. Uns achavam que não sairíamos de um concept, outros já achavam que dava pra completar uma fase inteira. E ficou na base do "vamo ver no que vai dar". Começando as atividades, resolvemos utilizar como ferramentas, o excelente framework <a href="http://www.melonjs.org">MelonJS</a>, já que tínhamos resolvido fazer nosso jogo em HTML5.</p>
 
 <p>Vamos aos rabiscos. Nossos excelentes artistas <a href="http://rathaelos.deviantart.com/">Rafael Françoi</a> e <a href="http://www.facebook.com/profile.php?id=100000111944458">Carlos Iubel</a> começaram a botar a mão na massa ainda a noite e lá por volta das 01 da manhã do
 sábado já tinhamos alguns concepts criados.</p>
@@ -80,22 +52,15 @@ Team" /></p>
 
 <p>Matéria que saiu na Rede Globo local, falando sobre o evento:</p>
 
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/GCwCSUXPBP0 "></iframe></div>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/GCwCSUXPBP0 "></iframe></div></p>
 
+<p>Entrevista com os desenvolvedores do Frangoi's Journey:</p>
 
-<p></p>
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/nzl6Bmtfjhk "></iframe></div></p>
 
-<p>Entrevista com os desenvolvedores do Frangoi&#8217;s Journey:</p>
+<p>Gameplay do Frangoi's Journey:</p>
 
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/nzl6Bmtfjhk "></iframe></div>
-
-
-<p></p>
-
-<p>Gameplay do Frangoi&#8217;s Journey:</p>
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/DXE6YxewXaM "></iframe></div>
-
+<p><div class="embed-video-container"><iframe src="http://www.youtube.com/embed/DXE6YxewXaM "></iframe></div></p>
 
 <p>Quem quiser acompanhar a evolução do jogo, pode baixar ou contribuir gratuitamente com o código fonte do jogo disponível no meu Github, <a href="https://github.com/ellisonleao/frangois">Aqui</a></p>
 ]]></content>
@@ -148,7 +113,7 @@ Team" /></p>
 
 <p>Dentro do arquivo Cannon.cs , no método UpdateCannon() , temos o seguinte código</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -158,15 +123,13 @@ Team" /></p>
 </span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">keybState</span><span class="p">.</span><span class="n">IsKeyDown</span><span class="p">(</span><span class="n">Keys</span><span class="p">.</span><span class="n">Right</span><span class="p">))</span>
 </span><span class='line'>   <span class="n">Angle</span> <span class="p">+=</span> <span class="m">1</span><span class="p">;</span>
 </span><span class='line'><span class="n">Angle</span> <span class="p">=</span> <span class="n">MathHelper</span><span class="p">.</span><span class="n">Clamp</span><span class="p">(</span><span class="n">Angle</span><span class="p">,</span> <span class="p">-</span><span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>É nessa parte que o código recalcula o novo ângulo de rotação do canhão. Como vocês podem ver, o código é extremamente simples, dado que o XNA já possui métodos que tratam os eventos de input de teclado (IsKeyDown ) , como também limita a rotação angular do canhão em um arco de no máximo 180 graus</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="n">Angle</span> <span class="p">=</span> <span class="n">MathHelper</span><span class="p">.</span><span class="n">Clamp</span><span class="p">(</span><span class="n">Angle</span><span class="p">,</span> <span class="p">-</span><span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Mas agora temos o seguinte problema: Após eu setar o ângulo de lançamento do canhão, precisamos fazer com que a bala saia pela ponta do mesmo. E como fazemos isso ? Simples, utilizamos o vetor de offset.
 Um vetor de offset, como o nome já dia, nada mais é do que um vetor que parte do centro até a ponta do canhão.
@@ -178,7 +141,7 @@ A partir do momento que rotacionamos o ângulo dele, precisamos ,também, rotaci
 
 <p>O cálculo do nosso vetor de offset pode ser demonstrado no método getCannonOffset() , da classe Cannon, a seguir:</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -190,16 +153,14 @@ A partir do momento que rotacionamos o ângulo dele, precisamos ,também, rotaci
 </span><span class='line'>  <span class="n">Vector2</span> <span class="n">direction</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(((</span><span class="kt">float</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="n">Cos</span><span class="p">(</span><span class="n">getRotateAngle</span><span class="p">())</span> <span class="p">*</span> <span class="n">size</span><span class="p">),</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="n">Sin</span><span class="p">(</span><span class="n">getRotateAngle</span><span class="p">())</span> <span class="p">*</span> <span class="n">size</span><span class="p">));</span>
 </span><span class='line'>  <span class="k">return</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Position</span><span class="p">,</span> <span class="n">direction</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
+<p>Primeiro calculamos o tamanho que vai ter o nosso vetor (nesse caso a largura do canhão - 20 pixels , posição aproximada da "boca" dele) . Agora temos de calcular o nosso vetor offset. O cálculo é relativamente simples: Dado o tamanho do vetor e o ângulo, temos:</p>
 
-<p>Primeiro calculamos o tamanho que vai ter o nosso vetor (nesse caso a largura do canhão - 20 pixels , posição aproximada da &#8220;boca&#8221; dele) . Agora temos de calcular o nosso vetor offset. O cálculo é relativamente simples: Dado o tamanho do vetor e o ângulo, temos:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>X = co-seno(ângulo) * tamanho; 
-</span><span class='line'>Y = seno(ângulo) * tamanho;</span></code></pre></td></tr></table></div></figure>
-
+</span><span class='line'>Y = seno(ângulo) * tamanho;</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Lembrando que o ângulo tem de ser passado em Radianos ( o método getRotateAngle() transforma o ângulo dado em Radianos ).</p>
 
@@ -211,22 +172,27 @@ A partir do momento que rotacionamos o ângulo dele, precisamos ,também, rotaci
 
 <p>O cálculo da nova posição da bala do canhão pode ser visto na classe CannonBall, método Update():</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
 </pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="kt">float</span> <span class="n">secs</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">gameTime</span><span class="p">.</span><span class="n">ElapsedGameTime</span><span class="p">.</span><span class="n">TotalSeconds</span> <span class="p">*</span> <span class="m">9</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">Vector2</span> <span class="n">accelSecs</span> <span class="p">=</span> <span class="p">(</span><span class="n">Wind</span> <span class="p">/</span> <span class="n">Mass</span> <span class="p">+</span> <span class="n">Gravity</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">Position</span> <span class="p">+=</span> <span class="p">(</span><span class="n">Momentum</span> <span class="p">+</span> <span class="n">accelSecs</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">Momentum</span> <span class="p">+=</span> <span class="n">accelSecs</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="kt">float</span> <span class="n">secs</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">gameTime</span><span class="p">.</span><span class="n">ElapsedGameTime</span><span class="p">.</span><span class="n">TotalSeconds</span> <span class="p">*</span> <span class="m">9</span><span class="p">;</span>
+</span><span class='line'><span class="n">Vector2</span> <span class="n">accelSecs</span> <span class="p">=</span> <span class="p">(</span><span class="n">Wind</span> <span class="p">/</span> <span class="n">Mass</span> <span class="p">+</span> <span class="n">Gravity</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
+</span><span class='line'><span class="n">Position</span> <span class="p">+=</span> <span class="p">(</span><span class="n">Momentum</span> <span class="p">+</span> <span class="n">accelSecs</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
+</span><span class='line'><span class="n">Momentum</span> <span class="p">+=</span> <span class="n">accelSecs</span><span class="p">;</span>
+</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Nesse método calculamos o chamado <em>deltatime</em> do jogo, que nos da informação do tempo corrido do jogo. Aqui, por motivos de balanceamento, multiplico o delta time por 9 para aumentar a velocidade com que a bomba se move.
 Depois, calculamos a resultante das forças que estão atuando na bola (neste caso vento, massa e gravidade). Após calcularmos nossa resultante, atualizamos a posição da bala, somando-a com o nosso vetor de posição.</p>
@@ -236,152 +202,6 @@ Depois, calculamos a resultante das forças que estão atuando na bola (neste ca
 <p>Mostrei aqui apenas algumas partes interessantes do exercício de canhões com vetores usando XNA. Aconselho a vocês baixarem o  código completo do jogo no meu <a href="http://github.com/ellisonleao/Xna-Cannon">Github</a></p>
 
 <p>Então é isso pessoal, espero que vocês tenham entendido como é importante o uso de vetores nos jogos. Até o próximo post pessoal!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The wonderful world of Screen]]></title>
-    <link href="http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/"/>
-    <updated>2011-09-22T00:47:00-03:00</updated>
-    <id>http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen</id>
-    <content type="html"><![CDATA[<p>According to the manual, &#8220;Screen is a full-screen window manager that multiplexes a physical terminal between several processes, typically interactive shells,&#8221; in other words, imagine having multiple terminals open in the same ssh session, with each one having their separate processes (with other ssh connections). Have you Imagined? Now imagine that you can keep that session active in the server connected by the time you want. Therefore, your tasks will be active on the server as long as you want and there be no problem if  a connection failure happens. In this post, I will show some of the characteristics of the screen and teach a simple script that generates a session with 3 &#8220;tabs&#8221; opened for one project.</p>
-
-<h1>Installing Screen</h1>
-
-<p>To install screen, for Ubuntu and Debian users, open a terminal and just type:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~# sudo apt-get install screen
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To other distros, you can download screen in the <a href="http://www.gnu.org/software/screen/">official site</a></p>
-
-<h1>Configuring a .screenrc file</h1>
-
-<p>We can configure a simple but cool visual interface for screen, modifying our .screenrc file . Open your favorite text editor and edit the file ~/.screenrc:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>hardstatus alwayslastline
-</span><span class='line'>hardstatus string <span class="s1">&#39;%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]&#39;</span>
-</span><span class='line'>vbell on
-</span><span class='line'>defscrollback 1024
-</span><span class='line'>startup_message off
-</span><span class='line'>autodetach on
-</span><span class='line'>defutf8 on
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now let&#8217;s open our screen. Go to the terminal and type <em>screen</em>. You should see a screen like this:</p>
-
-<p><img src="http://2.bp.blogspot.com/_iWsqNoMkfno/TIJkuLOBtnI/AAAAAAAAAOg/I9ehKHxgI1w/s1600/screen.png" alt="" /></p>
-
-<p>Here  we can find some useful informations:</p>
-
-<ul>
-<li>Left side: Host name that you&#8217;re connected</li>
-<li>Center:  Actual &#8220;Tab&#8221;</li>
-<li>Right side: Server Date/Time</li>
-</ul>
-
-
-<p>Screen uses the command &#8220;Ctrl-A&#8221; as a signal to send commands to screen instead of the shell.</p>
-
-<p>Some basics commands on screen:</p>
-
-<ul>
-<li>(Ctrl+A) + C - Creates new &#8220;Tab&#8221;</li>
-<li>(Ctrl+D) - Remove current &#8220;Tab&#8221;</li>
-<li>(Ctrl+A) + D - Detach the screen session</li>
-</ul>
-
-
-<p>Between &#8220;Tabs&#8221;:</p>
-
-<ul>
-<li>(Ctrl+A) + N - Go to the next &#8220;tab&#8221;</li>
-<li>(Ctrl+A) + P - Go to the previous &#8220;tab&#8221;</li>
-<li>(Ctrl+A) + NUM - Go to &#8220;tab&#8221; number = NUM</li>
-</ul>
-
-
-<p>For more commands just type (Ctrl+A) + ? for help.</p>
-
-<h1>A general script to create a development environment</h1>
-
-<p>Now it&#8217;s time to create a cool script that allow us to call screen with 3 pre-opened tabs, each one with its own functionality.
-In my projects i use to put one tab for run general services (web servers, etc), another tab for VIM editor and another tab with a bash for general commands. The script was created with (Uncle Paul&#8217;s)[http://vimnox.wordpress.com/] help.</p>
-
-<p>Let&#8217;s call the script <em>newscreen</em> . Create a file <em>newscreen</em> and put the following code:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">source</span> <span class="nv">$HOME</span>/.screenrc
-</span><span class='line'>screen -t server
-</span><span class='line'>screen -t vim
-</span><span class='line'>screen -t bash
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Save the file on <strong>/usr/local/bin/</strong> . That script is gonna be called by another script that we&#8217;ll call <em>createscreen</em>. Create anothe file called <em>createscreen</em> and put the following code:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="o">[</span> &amp;amp;quot;<span class="nv">$#&amp;</span>amp;quot; -ne 1 <span class="o">]</span>
-</span><span class='line'><span class="k">then</span>
-</span><span class='line'><span class="nb">echo</span> &amp;amp;quot;Digite o nome <span class="k">do </span>projeto&amp;amp;quot;
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>screen -RR <span class="nv">$1</span> -c /usr/local/bin/newscreen
-</span><span class='line'><span class="k">fi</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Also save this file on <strong>/usr/local/bin/</strong> . After all set and done, give the execution permissions to <em>createscreen</em> file (chmod +x). Now we can use the script by typing:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~# /usr/local/bin newscreen PROJECTNAME
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And that&#8217;s it! See you at next post!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mute in Curitiba]]></title>
-    <link href="http://ellisonleao.github.com/blog/2011/mute-em-curitiba/"/>
-    <updated>2011-09-16T12:13:00-03:00</updated>
-    <id>http://ellisonleao.github.com/blog/2011/mute-em-curitiba</id>
-    <content type="html"><![CDATA[<p>One of the finest things about living in Curitiba is that you can go to a lots of great shows and pay really cheap tickets. On September 4th was a hardcore day in Curitiba. I went to a show with Mute ( Canada ), one of the most promissing bands of the world hardcore bands scenario. I paid about R$ 25,00 (show worth the price) , and the show was really exciting. Here some live footage</p>
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/aaUmOSvROBw "></iframe></div>
-
-
-
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/srTUn_o4WUM "></iframe></div>
-
-
-
-
-<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/fiXKEAOtAtI "></iframe></div>
-
 ]]></content>
   </entry>
   
