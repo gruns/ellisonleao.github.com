@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>The wonderful world of Screen - Ellison Leão</title>
+  <title>Category: django - Ellison Leão</title>
   <meta name="author" content="Ellison Leão">
 
   
-  <meta name="description" content="According to the manual, &#8220;Screen is a full-screen window manager that multiplexes a physical terminal between several processes, typically &hellip;">
+  <meta name="description" content="Category: django">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/">
+  <link rel="canonical" href="http://ellisonleao.github.comblog/categories/django/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -29,11 +29,11 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<meta property="og:url" content="http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/">
+<meta property="og:url" content="http://ellisonleao.github.comblog/categories/django/index.html">
 <meta property="og:type" content="website" />
 
-<meta property="og:title" content="The wonderful world of Screen">
-<meta property="og:description" content="">
+<meta property="og:title" content="Category: django">
+<meta property="og:description" content="Category: django">
  
 
 
@@ -88,214 +88,36 @@
     <div id="main">
       <div id="content">
         <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">The Wonderful World of Screen</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-09-22T00:47:00-03:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2011</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Category: Django</h1>
     
   </header>
-
-
-<div class="entry-content"><p>According to the manual, &#8220;Screen is a full-screen window manager that multiplexes a physical terminal between several processes, typically interactive shells,&#8221; in other words, imagine having multiple terminals open in the same ssh session, with each one having their separate processes (with other ssh connections). Have you Imagined? Now imagine that you can keep that session active in the server connected by the time you want. Therefore, your tasks will be active on the server as long as you want and there be no problem if  a connection failure happens. In this post, I will show some of the characteristics of the screen and teach a simple script that generates a session with 3 &#8220;tabs&#8221; opened for one project.</p>
-
-<h1>Installing Screen</h1>
-
-<p>To install screen, for Ubuntu and Debian users, open a terminal and just type:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~# sudo apt-get install screen
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>To other distros, you can download screen in the <a href="http://www.gnu.org/software/screen/">official site</a></p>
-
-<h1>Configuring a .screenrc file</h1>
-
-<p>We can configure a simple but cool visual interface for screen, modifying our .screenrc file . Open your favorite text editor and edit the file ~/.screenrc:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>hardstatus alwayslastline
-</span><span class='line'>hardstatus string <span class="s1">&#39;%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]&#39;</span>
-</span><span class='line'>vbell on
-</span><span class='line'>defscrollback 1024
-</span><span class='line'>startup_message off
-</span><span class='line'>autodetach on
-</span><span class='line'>defutf8 on
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now let&#8217;s open our screen. Go to the terminal and type <em>screen</em>. You should see a screen like this:</p>
-
-<p><img src="http://2.bp.blogspot.com/_iWsqNoMkfno/TIJkuLOBtnI/AAAAAAAAAOg/I9ehKHxgI1w/s1600/screen.png" alt="" /></p>
-
-<p>Here  we can find some useful informations:</p>
-
-<ul>
-<li>Left side: Host name that you&#8217;re connected</li>
-<li>Center:  Actual &#8220;Tab&#8221;</li>
-<li>Right side: Server Date/Time</li>
-</ul>
-
-
-<p>Screen uses the command &#8220;Ctrl-A&#8221; as a signal to send commands to screen instead of the shell.</p>
-
-<p>Some basics commands on screen:</p>
-
-<ul>
-<li>(Ctrl+A) + C - Creates new &#8220;Tab&#8221;</li>
-<li>(Ctrl+D) - Remove current &#8220;Tab&#8221;</li>
-<li>(Ctrl+A) + D - Detach the screen session</li>
-</ul>
-
-
-<p>Between &#8220;Tabs&#8221;:</p>
-
-<ul>
-<li>(Ctrl+A) + N - Go to the next &#8220;tab&#8221;</li>
-<li>(Ctrl+A) + P - Go to the previous &#8220;tab&#8221;</li>
-<li>(Ctrl+A) + NUM - Go to &#8220;tab&#8221; number = NUM</li>
-</ul>
-
-
-<p>For more commands just type (Ctrl+A) + ? for help.</p>
-
-<h1>A general script to create a development environment</h1>
-
-<p>Now it&#8217;s time to create a cool script that allow us to call screen with 3 pre-opened tabs, each one with its own functionality.
-In my projects i use to put one tab for run general services (web servers, etc), another tab for VIM editor and another tab with a bash for general commands. The script was created with (Uncle Paul&#8217;s)[http://vimnox.wordpress.com/] help.</p>
-
-<p>Let&#8217;s call the script <em>newscreen</em> . Create a file <em>newscreen</em> and put the following code:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">source</span> <span class="nv">$HOME</span>/.screenrc
-</span><span class='line'>screen -t server
-</span><span class='line'>screen -t vim
-</span><span class='line'>screen -t bash
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Save the file on <strong>/usr/local/bin/</strong> . That script is gonna be called by another script that we&#8217;ll call <em>createscreen</em>. Create anothe file called <em>createscreen</em> and put the following code:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/bash</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="o">[</span> &amp;amp;quot;<span class="nv">$#&amp;</span>amp;quot; -ne 1 <span class="o">]</span>
-</span><span class='line'><span class="k">then</span>
-</span><span class='line'><span class="nb">echo</span> &amp;amp;quot;Digite o nome <span class="k">do </span>projeto&amp;amp;quot;
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'>screen -RR <span class="nv">$1</span> -c /usr/local/bin/newscreen
-</span><span class='line'><span class="k">fi</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Also save this file on <strong>/usr/local/bin/</strong> . After all set and done, give the execution permissions to <em>createscreen</em> file (chmod +x). Now we can use the script by typing:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>~# /usr/local/bin newscreen PROJECTNAME
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>And that&#8217;s it! See you at next post!</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Ellison Leão</span></span>
-
-      
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2013</h2>
+
+<article>
+  
+<h1><a href="/blog/2013/a-simple-fabfile-for-django-applications/">A simple fabfile for Django Applications</a></h1>
+<time datetime="2013-05-06T12:25:00-03:00" pubdate><span class='month'>May</span> <span class='day'>06</span> <span class='year'>2013</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/django/'>django</a>, <a class='category' href='/blog/categories/python/'>python</a></span>
+</footer>
 
 
-<time datetime="2011-09-22T00:47:00-03:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2011</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/dev/'>Dev</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/" data-via="" data-counturl="http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2011/mute-em-curitiba/" title="Previous Post: Mute in Curitiba">&laquo; Mute in Curitiba</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2011/xna-e-os-canhoes/" title="Next Post: XNA e os canhões!">XNA e os canhões! &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -479,10 +301,7 @@ In my projects i use to put one tab for run general services (web servers, etc),
       var disqus_shortname = 'ellisonleao';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/';
-        var disqus_url = 'http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
 
     (function () {
