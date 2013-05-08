@@ -4,7 +4,7 @@
   <title><![CDATA[Ellison Leão]]></title>
   <link href="http://ellisonleao.github.com/atom.xml" rel="self"/>
   <link href="http://ellisonleao.github.com/"/>
-  <updated>2013-05-08T00:42:50-03:00</updated>
+  <updated>2013-05-08T00:46:38-03:00</updated>
   <id>http://ellisonleao.github.com/</id>
   <author>
     <name><![CDATA[Ellison Leão]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>Hello people! This is a quick post about how can you get all the
 Components of a Unity GameObject. Sometimes you need to call a
 function inside a script that belongs to another GameObject. Getting
-this script component is one of the ways of doing it. So here&#8217;s the code</p>
+this script component is one of the ways of doing it. Let&#8217;s see the code</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
