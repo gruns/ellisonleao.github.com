@@ -9,7 +9,7 @@ categories: [Game Development, Unity3D, Protip]
 Hello people! This is a quick post about how can you get all the
 Components of a Unity GameObject. Sometimes you need to call a
 function inside a script that belongs to another GameObject. Getting
-this script component is one of the ways of doing it. So here's the code
+this script component is one of the ways of doing it. Let's see the code
 
 {% codeblock lang:csharp %}
 Component[] components = YOURGAMEOBJECT.GetComponents<Component>();
