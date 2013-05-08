@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Random - Ellison Leão</title>
+  <title>Debug all the Components of a Unity3D GameObject - Ellison Leão</title>
   <meta name="author" content="Ellison Leão">
 
   
-  <meta name="description" content="Category: Random">
+  <meta name="description" content="Hello people! This is a quick post about how can you get all the
+Components of a Unity GameObject. Sometimes you need to call a
+function inside a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ellisonleao.github.comblog/categories/random/">
+  <link rel="canonical" href="http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -29,11 +31,11 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<meta property="og:url" content="http://ellisonleao.github.comblog/categories/random/index.html">
+<meta property="og:url" content="http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/">
 <meta property="og:type" content="website" />
 
-<meta property="og:title" content="Category: Random">
-<meta property="og:description" content="Category: Random">
+<meta property="og:title" content="Debug all the Components of a Unity3D GameObject">
+<meta property="og:description" content="">
  
 
 
@@ -88,53 +90,114 @@
     <div id="main">
       <div id="content">
         <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Random</h1>
+    
+      <h1 class="entry-title">Debug All the Components of a Unity3D GameObject</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-08T00:34:00-03:00" pubdate data-updated="true">May 8<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Hello people! This is a quick post about how can you get all the
+Components of a Unity GameObject. Sometimes you need to call a
+function inside a script that belongs to another GameObject. Getting
+this script component is one of the ways of doing it. So here&#8217;s the code</p>
 
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/a-infancia-ainda-nao-esta-perdida/">The hope of our childhood isn't lost (yet)</a></h1>
-<time datetime="2012-04-16T12:33:00-03:00" pubdate><span class='month'>Apr</span> <span class='day'>16</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/random/'>Random</a></span>
-</footer>
-
-
-</article>
-
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="n">Component</span><span class="p">[]</span> <span class="n">components</span> <span class="p">=</span> <span class="n">YOURGAMEOBJECT</span><span class="p">.</span><span class="n">GetComponents</span><span class="p">&lt;</span><span class="n">Component</span><span class="p">&gt;();</span>
+</span><span class='line'><span class="k">foreach</span> <span class="p">(</span><span class="n">Component</span> <span class="n">component</span> <span class="k">in</span> <span class="n">components</span><span class="p">){</span>
+</span><span class='line'>  <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;@@@@&quot;</span> <span class="p">+</span> <span class="n">YOURGAMEOBJECT</span><span class="p">.</span><span class="n">name</span> <span class="p">+</span><span class="s">&quot;\t[&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">name</span><span class="p">+</span><span class="s">&quot;] &quot;</span><span class="p">+</span><span class="s">&quot;\t&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span> <span class="p">+</span><span class="s">&quot;\t&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">GetType</span><span class="p">().</span><span class="n">BaseType</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/mute-em-curitiba/">Mute in Curitiba</a></h1>
-<time datetime="2011-09-16T12:13:00-03:00" pubdate><span class='month'>Sep</span> <span class='day'>16</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/music/'>Music</a>, <a class='category' href='/blog/categories/random/'>Random</a></span>
-</footer>
-
-
-</article>
-
+<p>And that&#8217;s it. Call this code inside a script and see all the components
+in the Debug console. Hope it helps! See you next post!</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ellison Leão</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-08T00:34:00-03:00" pubdate data-updated="true">May 8<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/game-development/'>Game Development</a>, <a class='category' href='/blog/categories/protip/'>Protip</a>, <a class='category' href='/blog/categories/unity3d/'>Unity3D</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/" data-via="" data-counturl="http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/a-simple-fabfile-for-django-applications/" title="Previous Post: A simple fabfile for Django applications">&laquo; A simple fabfile for Django applications</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -318,7 +381,10 @@
       var disqus_shortname = 'ellisonleao';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/';
+        var disqus_url = 'http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/';
+        var disqus_script = 'embed.js';
       
 
     (function () {
