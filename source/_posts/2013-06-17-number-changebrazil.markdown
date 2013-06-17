@@ -20,6 +20,4 @@ Brazil, while the media only shows the people that we're ready to
 celebrate the next World Cup and the next Olympic Games. But we are not. 
 It only takes 5 minutes of your time. Please share it.
 
-\#ChangeBrazil
-
 {% youtube AIBYEXLGdSg %}
