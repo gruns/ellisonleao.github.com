@@ -4,7 +4,7 @@
   <title><![CDATA[Ellison Leão]]></title>
   <link href="http://ellisonleao.github.com/atom.xml" rel="self"/>
   <link href="http://ellisonleao.github.com/"/>
-  <updated>2013-05-08T00:46:38-03:00</updated>
+  <updated>2013-06-17T11:36:53-03:00</updated>
   <id>http://ellisonleao.github.com/</id>
   <author>
     <name><![CDATA[Ellison Leão]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[#ChangeBrazil]]></title>
+    <link href="http://ellisonleao.github.com/blog/2013/number-changebrazil/"/>
+    <updated>2013-06-17T11:22:00-03:00</updated>
+    <id>http://ellisonleao.github.com/blog/2013/number-changebrazil</id>
+    <content type="html"><![CDATA[<p>Hello guys,</p>
+
+<p>Unfortunately this post is not about game development or web
+development, but fortunately it&#8217;s about a greater cause that is trying
+to change the reality of many people here in Brazil. And since i live
+here it&#8217;s my job to share this in this blog.</p>
+
+<p>So this post is to talk about a really nice video made from an initiative
+called &#8220;Change Brazil&#8221;.
+This great video talks about all the bad things happening right now here in
+Brazil, while the media only shows the people that we&#8217;re ready to
+celebrate the next World Cup and the next Olympic Games. It only takes 5
+minutes of your time.</p>
+
+<p>Please share it.</p>
+
+<h1>ChangeBrazil</h1>
+
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/AIBYEXLGdSg "></iframe></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Debug all the Components of a Unity3D GameObject]]></title>
