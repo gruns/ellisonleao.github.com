@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unity3D | Ellison Leão]]></title>
   <link href="http://ellisonleao.github.com/blog/categories/unity3d/atom.xml" rel="self"/>
   <link href="http://ellisonleao.github.com/"/>
-  <updated>2013-06-17T12:13:09-03:00</updated>
+  <updated>2013-07-09T02:26:45-03:00</updated>
   <id>http://ellisonleao.github.com/</id>
   <author>
     <name><![CDATA[Ellison Leão]]></name>
@@ -23,21 +23,13 @@ Components of a Unity GameObject. Sometimes you need to call a
 function inside a script that belongs to another GameObject. Getting
 this script component is one of the ways of doing it. Let's see the code</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="n">Component</span><span class="p">[]</span> <span class="n">components</span> <span class="p">=</span> <span class="n">YOURGAMEOBJECT</span><span class="p">.</span><span class="n">GetComponents</span><span class="p">&lt;</span><span class="n">Component</span><span class="p">&gt;();</span>
-</span><span class='line'><span class="k">foreach</span> <span class="p">(</span><span class="n">Component</span> <span class="n">component</span> <span class="k">in</span> <span class="n">components</span><span class="p">){&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&quot;@@@@&quot;</span> <span class="p">+</span> <span class="n">YOURGAMEOBJECT</span><span class="p">.</span><span class="n">name</span> <span class="p">+</span><span class="s">&quot;\t[&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">name</span><span class="p">+</span><span class="s">&quot;] &quot;</span><span class="p">+</span><span class="s">&quot;\t&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span> <span class="p">+</span><span class="s">&quot;\t&quot;</span><span class="p">+</span><span class="n">c</span><span class="p">.</span><span class="n">GetType</span><span class="p">().</span><span class="n">BaseType</span><span class="p">);</span>
-</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>Component[] components = YOURGAMEOBJECT.GetComponents&lt;Component&gt;();
+foreach (Component component in components){
+    Debug.Log("@@@@" + YOURGAMEOBJECT.name + "\t["+c.name+"]" + 
+              "\t"+ c.GetType() +"\t"+c.GetType().BaseType);
+
+}
+</code></pre>
 
 <p>And that's it. Call this code inside a script and see all the components
 in the Debug console. Hope it helps! See you next post!</p>

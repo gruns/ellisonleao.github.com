@@ -2,54 +2,58 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/mute-em-curitiba/</loc>
-        <lastmod>2013-04-23T02:07:58-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/</loc>
-        <lastmod>2013-04-23T02:18:53-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/xna-e-os-canhoes/</loc>
-        <lastmod>2013-04-23T02:31:45-03:00</lastmod>
+        <lastmod>2013-07-09T02:26:45-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2012/nao-eram-apenas-copos-rosas/</loc>
-        <lastmod>2013-04-23T02:06:13-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2012/a-infancia-ainda-nao-esta-perdida/</loc>
-        <lastmod>2013-04-23T01:41:38-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2013/hello-world-again/</loc>
-        <lastmod>2013-04-23T01:23:20-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>
             http://ellisonleao.github.com/blog/2013/a-simple-fabfile-for-django-applications/
         </loc>
-        <lastmod>2013-05-06T12:38:14-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>
             http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/
         </loc>
-        <lastmod>2013-05-08T00:46:37-03:00</lastmod>
+        <lastmod>2013-07-09T02:23:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2013/number-changebrazil/</loc>
-        <lastmod>2013-06-17T12:10:11-03:00</lastmod>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/archives/</loc>
-        <lastmod>2013-06-17T12:10:11-03:00</lastmod>
+        <lastmod>2013-07-09T02:26:45-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/</loc>
-        <lastmod>2013-06-17T12:10:11-03:00</lastmod>
+        <lastmod>2013-07-09T02:26:45-03:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/robots.txt</loc>
-        <lastmod>2013-03-20T22:50:21-03:00</lastmod>
+        <lastmod>2013-07-09T00:57:47-03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ellisonleao.github.com/search.html</loc>
+        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
     </url>
 </urlset>

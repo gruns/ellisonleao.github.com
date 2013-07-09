@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Game Dev | Ellison Leão]]></title>
   <link href="http://ellisonleao.github.com/blog/categories/game-dev/atom.xml" rel="self"/>
   <link href="http://ellisonleao.github.com/"/>
-  <updated>2013-06-17T12:13:09-03:00</updated>
+  <updated>2013-07-09T02:26:45-03:00</updated>
   <id>http://ellisonleao.github.com/</id>
   <author>
     <name><![CDATA[Ellison Leão]]></name>
@@ -113,23 +113,17 @@ Team" /></p>
 
 <p>Dentro do arquivo Cannon.cs , no método UpdateCannon() , temos o seguinte código</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">keybState</span><span class="p">.</span><span class="n">IsKeyDown</span><span class="p">(</span><span class="n">Keys</span><span class="p">.</span><span class="n">Left</span><span class="p">))</span>
-</span><span class='line'>   <span class="n">Angle</span> <span class="p">-=</span> <span class="m">1</span><span class="p">;</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">keybState</span><span class="p">.</span><span class="n">IsKeyDown</span><span class="p">(</span><span class="n">Keys</span><span class="p">.</span><span class="n">Right</span><span class="p">))</span>
-</span><span class='line'>   <span class="n">Angle</span> <span class="p">+=</span> <span class="m">1</span><span class="p">;</span>
-</span><span class='line'><span class="n">Angle</span> <span class="p">=</span> <span class="n">MathHelper</span><span class="p">.</span><span class="n">Clamp</span><span class="p">(</span><span class="n">Angle</span><span class="p">,</span> <span class="p">-</span><span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>if (keybState.IsKeyDown(Keys.Left))
+   Angle -= 1;
+if (keybState.IsKeyDown(Keys.Right))
+   Angle += 1;
+Angle = MathHelper.Clamp(Angle, -180, 0);
+</code></pre>
 
 <p>É nessa parte que o código recalcula o novo ângulo de rotação do canhão. Como vocês podem ver, o código é extremamente simples, dado que o XNA já possui métodos que tratam os eventos de input de teclado (IsKeyDown ) , como também limita a rotação angular do canhão em um arco de no máximo 180 graus</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="n">Angle</span> <span class="p">=</span> <span class="n">MathHelper</span><span class="p">.</span><span class="n">Clamp</span><span class="p">(</span><span class="n">Angle</span><span class="p">,</span> <span class="p">-</span><span class="m">180</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>Angle = MathHelper.Clamp(Angle, -180, 0);
+</code></pre>
 
 <p>Mas agora temos o seguinte problema: Após eu setar o ângulo de lançamento do canhão, precisamos fazer com que a bala saia pela ponta do mesmo. E como fazemos isso ? Simples, utilizamos o vetor de offset.
 Um vetor de offset, como o nome já dia, nada mais é do que um vetor que parte do centro até a ponta do canhão.
@@ -141,26 +135,20 @@ A partir do momento que rotacionamos o ângulo dele, precisamos ,também, rotaci
 
 <p>O cálculo do nosso vetor de offset pode ser demonstrado no método getCannonOffset() , da classe Cannon, a seguir:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="n">Vector2</span> <span class="nf">getCannonOffset</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>  <span class="kt">float</span> <span class="n">size</span> <span class="p">=</span> <span class="p">(</span><span class="n">Sprite</span><span class="p">.</span><span class="n">Width</span><span class="p">)</span> <span class="p">-</span> <span class="m">20</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">Vector2</span> <span class="n">direction</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector2</span><span class="p">(((</span><span class="kt">float</span><span class="p">)</span><span class="n">Math</span><span class="p">.</span><span class="n">Cos</span><span class="p">(</span><span class="n">getRotateAngle</span><span class="p">())</span> <span class="p">*</span> <span class="n">size</span><span class="p">),</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="n">Sin</span><span class="p">(</span><span class="n">getRotateAngle</span><span class="p">())</span> <span class="p">*</span> <span class="n">size</span><span class="p">));</span>
-</span><span class='line'>  <span class="k">return</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Position</span><span class="p">,</span> <span class="n">direction</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>public Vector2 getCannonOffset()
+{
+  float size = (Sprite.Width) - 20;
+  Vector2 direction = new Vector2(((float)Math.Cos(getRotateAngle()) * size),
+                                 (float)(Math.Sin(getRotateAngle()) * size));
+  return Vector2.Add(Position, direction);
+}
+</code></pre>
 
 <p>Primeiro calculamos o tamanho que vai ter o nosso vetor (nesse caso a largura do canhão - 20 pixels , posição aproximada da "boca" dele) . Agora temos de calcular o nosso vetor offset. O cálculo é relativamente simples: Dado o tamanho do vetor e o ângulo, temos:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>X = co-seno(ângulo) * tamanho; 
-</span><span class='line'>Y = seno(ângulo) * tamanho;</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>x = co-seno(ângulo) * tamanho; 
+y = seno(ângulo) * tamanho;
+</code></pre>
 
 <p>Lembrando que o ângulo tem de ser passado em Radianos ( o método getRotateAngle() transforma o ângulo dado em Radianos ).</p>
 
@@ -172,27 +160,14 @@ A partir do momento que rotacionamos o ângulo dele, precisamos ,também, rotaci
 
 <p>O cálculo da nova posição da bala do canhão pode ser visto na classe CannonBall, método Update():</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='csharp'><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">(</span><span class="n">GameTime</span> <span class="n">gameTime</span><span class="p">)</span>
-</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="kt">float</span> <span class="n">secs</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">gameTime</span><span class="p">.</span><span class="n">ElapsedGameTime</span><span class="p">.</span><span class="n">TotalSeconds</span> <span class="p">*</span> <span class="m">9</span><span class="p">;</span>
-</span><span class='line'><span class="n">Vector2</span> <span class="n">accelSecs</span> <span class="p">=</span> <span class="p">(</span><span class="n">Wind</span> <span class="p">/</span> <span class="n">Mass</span> <span class="p">+</span> <span class="n">Gravity</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
-</span><span class='line'><span class="n">Position</span> <span class="p">+=</span> <span class="p">(</span><span class="n">Momentum</span> <span class="p">+</span> <span class="n">accelSecs</span><span class="p">)</span> <span class="p">*</span> <span class="n">secs</span><span class="p">;</span>
-</span><span class='line'><span class="n">Momentum</span> <span class="p">+=</span> <span class="n">accelSecs</span><span class="p">;</span>
-</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<pre><code>public void Update(GameTime gameTime)
+{
+    float secs = (float)gameTime.ElapsedGameTime.TotalSeconds * 9;
+    Vector2 accelSecs = (Wind / Mass + Gravity) * secs;
+    Position += (Momentum + accelSecs) * secs;
+    Momentum += accelSecs;
+}
+</code></pre>
 
 <p>Nesse método calculamos o chamado <em>deltatime</em> do jogo, que nos da informação do tempo corrido do jogo. Aqui, por motivos de balanceamento, multiplico o delta time por 9 para aumentar a velocidade com que a bomba se move.
 Depois, calculamos a resultante das forças que estão atuando na bola (neste caso vento, massa e gravidade). Após calcularmos nossa resultante, atualizamos a posição da bala, somando-a com o nosso vetor de posição.</p>
