@@ -109,17 +109,17 @@ $(function() {styleCode();});
 					<p>Hello people! This is a quick post about how can you get all the
 Components of a Unity GameObject. Sometimes you need to call a
 function inside a script that belongs to another GameObject. Getting
-this script component is one of the ways of doing it. Let&#8217;s see the code</p>
+this script component is one of the ways of doing it. Let’s see the code</p>
 
 <pre><code>Component[] components = YOURGAMEOBJECT.GetComponents&lt;Component&gt;();
 foreach (Component component in components){
-    Debug.Log("@@@@" + YOURGAMEOBJECT.name + "\t["+c.name+"]" + 
-              "\t"+ c.GetType() +"\t"+c.GetType().BaseType);
+	Debug.Log("@@@@" + YOURGAMEOBJECT.name + "\t["+c.name+"]" + 
+			  "\t"+ c.GetType() +"\t"+c.GetType().BaseType);
 
 }
 </code></pre>
 
-<p>And that&#8217;s it. Call this code inside a script and see all the components
+<p>And that’s it. Call this code inside a script and see all the components
 in the Debug console. Hope it helps! See you next post!</p>
 
 					
