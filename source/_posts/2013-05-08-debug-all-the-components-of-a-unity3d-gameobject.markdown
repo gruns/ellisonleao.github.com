@@ -11,12 +11,12 @@ Components of a Unity GameObject. Sometimes you need to call a
 function inside a script that belongs to another GameObject. Getting
 this script component is one of the ways of doing it. Let's see the code
 
-{% codeblock lang:csharp %}
-Component[] components = YOURGAMEOBJECT.GetComponents<Component>();
-foreach (Component component in components){
-	Debug.Log("@@@@" + YOURGAMEOBJECT.name +"\t["+c.name+"] "+"\t"+c.GetType() +"\t"+c.GetType().BaseType);
-}
-{% endcodeblock %}
+	Component[] components = YOURGAMEOBJECT.GetComponents<Component>();
+	foreach (Component component in components){
+		Debug.Log("@@@@" + YOURGAMEOBJECT.name + "\t["+c.name+"]" + 
+				  "\t"+ c.GetType() +"\t"+c.GetType().BaseType);
+
+	}
 
 And that's it. Call this code inside a script and see all the components
 in the Debug console. Hope it helps! See you next post!

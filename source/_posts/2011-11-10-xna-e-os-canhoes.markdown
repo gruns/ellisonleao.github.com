@@ -46,19 +46,15 @@ No jogo, o canhão poderá aumentar o diminuir o ângulo de lançamento para ten
 
 Dentro do arquivo Cannon.cs , no método UpdateCannon() , temos o seguinte código
 
-{% codeblock lang:csharp %}
-if (keybState.IsKeyDown(Keys.Left))
-   Angle -= 1;
-if (keybState.IsKeyDown(Keys.Right))
-   Angle += 1;
-Angle = MathHelper.Clamp(Angle, -180, 0);
-{% endcodeblock %}
+	if (keybState.IsKeyDown(Keys.Left))
+	   Angle -= 1;
+	if (keybState.IsKeyDown(Keys.Right))
+	   Angle += 1;
+	Angle = MathHelper.Clamp(Angle, -180, 0);
 
 É nessa parte que o código recalcula o novo ângulo de rotação do canhão. Como vocês podem ver, o código é extremamente simples, dado que o XNA já possui métodos que tratam os eventos de input de teclado (IsKeyDown ) , como também limita a rotação angular do canhão em um arco de no máximo 180 graus
 
-{% codeblock lang:csharp %}
-Angle = MathHelper.Clamp(Angle, -180, 0);
-{% endcodeblock %}
+	Angle = MathHelper.Clamp(Angle, -180, 0);
 
 Mas agora temos o seguinte problema: Após eu setar o ângulo de lançamento do canhão, precisamos fazer com que a bala saia pela ponta do mesmo. E como fazemos isso ? Simples, utilizamos o vetor de offset. 
 Um vetor de offset, como o nome já dia, nada mais é do que um vetor que parte do centro até a ponta do canhão. 
@@ -70,21 +66,18 @@ Na imagem vimos 3 vetores: o amarelo representa a posição da nave e os 2 branc
 
 O cálculo do nosso vetor de offset pode ser demonstrado no método getCannonOffset() , da classe Cannon, a seguir:
 
-{% codeblock lang:csharp %}
-public Vector2 getCannonOffset()
-{
-  float size = (Sprite.Width) - 20;
-  Vector2 direction = new Vector2(((float)Math.Cos(getRotateAngle()) * size), (float)(Math.Sin(getRotateAngle()) * size));
-  return Vector2.Add(Position, direction);
-}
-{% endcodeblock %}
+	public Vector2 getCannonOffset()
+	{
+	  float size = (Sprite.Width) - 20;
+	  Vector2 direction = new Vector2(((float)Math.Cos(getRotateAngle()) * size),
+ 									 (float)(Math.Sin(getRotateAngle()) * size));
+	  return Vector2.Add(Position, direction);
+	}
 
 Primeiro calculamos o tamanho que vai ter o nosso vetor (nesse caso a largura do canhão - 20 pixels , posição aproximada da "boca" dele) . Agora temos de calcular o nosso vetor offset. O cálculo é relativamente simples: Dado o tamanho do vetor e o ângulo, temos:
 
-{% codeblock %}
-X = co-seno(ângulo) * tamanho; 
-Y = seno(ângulo) * tamanho;
-{% endcodeblock %}
+	x = co-seno(ângulo) * tamanho; 
+	y = seno(ângulo) * tamanho;
 
 Lembrando que o ângulo tem de ser passado em Radianos ( o método getRotateAngle() transforma o ângulo dado em Radianos ).
 
@@ -96,15 +89,13 @@ Outra parte que vale a pena falar é como funciona o Update do jogo. No caso do 
 
 O cálculo da nova posição da bala do canhão pode ser visto na classe CannonBall, método Update():
 
-{% codeblock lang:csharp %}
-public void Update(GameTime gameTime)
-{
-	float secs = (float)gameTime.ElapsedGameTime.TotalSeconds * 9;
-	Vector2 accelSecs = (Wind / Mass + Gravity) * secs;
-	Position += (Momentum + accelSecs) * secs;
-	Momentum += accelSecs;
-}
-{% endcodeblock %}
+	public void Update(GameTime gameTime)
+	{
+		float secs = (float)gameTime.ElapsedGameTime.TotalSeconds * 9;
+		Vector2 accelSecs = (Wind / Mass + Gravity) * secs;
+		Position += (Momentum + accelSecs) * secs;
+		Momentum += accelSecs;
+	}
 
 Nesse método calculamos o chamado *deltatime* do jogo, que nos da informação do tempo corrido do jogo. Aqui, por motivos de balanceamento, multiplico o delta time por 9 para aumentar a velocidade com que a bomba se move. 
 Depois, calculamos a resultante das forças que estão atuando na bola (neste caso vento, massa e gravidade). Após calcularmos nossa resultante, atualizamos a posição da bala, somando-a com o nosso vetor de posição.
