@@ -8,7 +8,7 @@
 <meta http-equiv="imagetoolbar" content="false" />
 
 <!-- Title -->
-<title> Flask shorteners extension |  Ellison Leão - Drumming and Coding</title>
+<title> pyshorteners - A simple url shortening python lib |  Ellison Leão - Drumming and Coding</title>
 
 <!-- Custom Fonts -->
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css" />
@@ -95,32 +95,51 @@ $(function() {styleCode();});
 
 
 
-<time datetime="2013-09-24T15:22:00-03:00" pubdate data-updated="true">Sep 24<span>th</span>, 2013</time>
+<time datetime="2013-12-14T15:45:00-02:00" pubdate data-updated="true">Dec 14<span>th</span>, 2013</time>
 </div>
 		<div class="post">
 			<h2 class="title">
 				
-					Flask Shorteners Extension
+					Pyshorteners - a Simple Url Shortening Python Lib
 				
 			</h2>
 
 			<div class="text">
 				
-					<p>Hello guys, it’s been a while since last post, i know, but i’m trying my
-best to stay this blog updated with the all the stuff that i’m working
-on these days.</p>
+					<p>Hello Guys!</p>
 
-<p>Yesterday i’ve started to code a simple flask extension, called
-Flask-Shorteners. The idea is to abstract the shortening and expading of
-a given url using some famous shorteners APIs like Bit.ly and Googl
-shorteners. This extension is helping me learn Flask, a really nice
-web microframework for Python. If you like the extension please feel
-free to contribute.</p>
+<p>This month i’ve released a new python lib called pyshorteners. The main goal is
+to abstract some url shorteners API’s into one simple call to short and expand
+urls. </p>
 
-<p>You can find the source code here:
-<a href="https://github.com/ellisonleao/Flask-Shorteners">https://github.com/ellisonleao/Flask-Shorteners</a></p>
+<p>Some API’s already implemented are:</p>
 
-<p>See you next post! </p>
+<ul>
+  <li>Goo.gl</li>
+  <li>Bit.ly</li>
+  <li>Tinyurl.com</li>
+  <li>and others..</li>
+</ul>
+
+<p>Here’s an example of usage:</p>
+
+<pre><code>from pyshorteners import Shortener
+
+shortener = Shortener('GoogleShortener')
+
+url = 'http://myniceurl.com'
+shorten = shortener.short(url)
+print 'My shorten url is {}'.format(shorten)
+
+# Expanding
+short_url = 'http://goo.gl/AsCe'
+print 'My expanded url is {}'.format(shortener.expand(short_url))
+</code></pre>
+
+<p>You can find all the source code on the
+<a href="http://github.com/ellisonleao/pyshorteners/">official github repo</a></p>
+
+<p>See you guys next post!</p>
 
 					
 			</div>
