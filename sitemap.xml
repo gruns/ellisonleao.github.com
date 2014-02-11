@@ -2,49 +2,49 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/mute-em-curitiba/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/o-maravilhoso-mundo-do-screen/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2011/xna-e-os-canhoes/</loc>
-        <lastmod>2013-07-09T02:26:45-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2012/nao-eram-apenas-copos-rosas/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2012/a-infancia-ainda-nao-esta-perdida/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2013/hello-world-again/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>
             http://ellisonleao.github.com/blog/2013/a-simple-fabfile-for-django-applications/
         </loc>
-        <lastmod>2013-12-14T16:10:10-02:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>
             http://ellisonleao.github.com/blog/2013/debug-all-the-components-of-a-unity3d-gameobject/
         </loc>
-        <lastmod>2013-07-09T02:23:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/2013/number-changebrazil/</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>
             http://ellisonleao.github.com/blog/2013/pyshorteners-a-simple-url-shortening-python-lib/
         </loc>
-        <lastmod>2013-12-14T16:01:26-02:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/blog/archives/</loc>
@@ -52,7 +52,7 @@
     </url>
     <url>
         <loc>http://ellisonleao.github.com/</loc>
-        <lastmod>2013-12-14T16:10:10-02:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
     <url>
         <loc>http://ellisonleao.github.com/robots.txt</loc>
@@ -60,6 +60,6 @@
     </url>
     <url>
         <loc>http://ellisonleao.github.com/search.html</loc>
-        <lastmod>2013-07-09T02:22:32-03:00</lastmod>
+        <lastmod>2014-02-11T13:43:57-02:00</lastmod>
     </url>
 </urlset>
