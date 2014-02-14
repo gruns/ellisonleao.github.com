@@ -14,3 +14,6 @@ Clumsy Bird - An Open Source Flappy Bird using MelonJS
 ![Clumsy Bird](http://i.imgur.com/dHOEBK8.png)
 
 play it online here: [http://ellisonleao.github.io/clumsy-bird/](http://ellisonleao.github.io/clumsy-bird/)
+
+The source code is here:
+[http://github.com/ellisonleao/clumsy-bird/](http://github.com/ellisonleao/clumsy-bird/)
