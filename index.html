@@ -12,9 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 
 
@@ -39,53 +38,59 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="wrapper">
             <div id="content">
-              <h1>Hi, i am Ellison.</h1>
-              <p>Check out my links below. Portfolio soon!</p>
-              <div id="social">
-                <a href="https://medium.com/@ellisonleao"
-                   class="social-icon"
-                   target="_blank">
-                  <p><img src="img/medium.png"></p>
-                </a>
+                <h1>Hi, i am Ellison.</h1>
+                <p>Check out my links below.</p>
+                <div id="social">
+                    <a href="https://medium.com/@ellisonleao"
+                        class="social-icon"
+                        target="_blank">
+                        <p><img src="img/medium.png"></p>
+                    </a>
 
-                <a href="https://github.com/ellisonleao/"
-                   class="social-icon"
-                   target="_blank">
-                  <p><img src="img/github.png"></p>
-                </a>
-                <a href="https://plus.google.com/+EllisonLeao/posts"
-                   class="social-icon"
-                   target="_blank">
-                  <p><img src="img/google.png"></p>
-                </a>
-                <a href="http://twitter.com/ellisonleao"
-                   class="social-icon"
-                   target="_blank">
-                  <p><img src="img/twitter.png"></p>
-                </a>
-                <a href="http://www.linkedin.com/in/ellisonleao"
-                   class="social-icon"
-                   target="_blank">
-                  <p><img src="img/linkedin.png"></p>
-                </a>
+                    <a href="https://github.com/ellisonleao/"
+                        class="social-icon"
+                        target="_blank">
+                        <p><img src="img/github.png"></p>
+                    </a>
+                    <a href="https://plus.google.com/+EllisonLeao/posts"
+                        class="social-icon"
+                        target="_blank">
+                        <p><img src="img/google.png"></p>
+                    </a>
+                    <a href="http://twitter.com/ellisonleao"
+                        class="social-icon"
+                        target="_blank">
+                        <p><img src="img/twitter.png"></p>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ellisonleao"
+                        class="social-icon"
+                        target="_blank">
+                        <p><img src="img/linkedin.png"></p>
+                    </a>
+                    <br/>
+                    <br/>
+                    <h1 class="small" name="posts">Last blog Posts</h1>
+                    <br/>
+                    <ul class="posts"></ul>
+                </div>
             </div>
-          </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                                                                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-899823-6');ga('send','pageview');
         </script>
-    </body>
-</html>
+        </body>
+    </html>
