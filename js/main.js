@@ -6,7 +6,7 @@
           success  : function (data) {
             if (data.responseData.feed && data.responseData.feed.entries) {
                 var ul = $('.posts');
-                var entries = data.responseData.feed.entries.slice(0, 3);
+                var entries = data.responseData.feed.entries.slice(0, 4);
                 $.each(entries, function (i, e) {
                     ul.append('<li><p class="post"><a target="_blank" href="'+ e.link +'">' + e.title + '</a></p></li>');
                 });
