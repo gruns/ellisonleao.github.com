@@ -35,27 +35,31 @@ a,a: active,a: focus,a: hover {
 
 #content p {
 	font-size: 1.5em;
-	color: #000;
+	color: #eee;
 	margin-bottom: 15px;
+}
+
+.posts {
+	color: #2e2e2e;
 }
 
 .post a {
 	text-decoration: none;
-	color: #000;
+	color: #2e2e2e;
 }
 
 .post a:hover {
-	color: #C57365;
-	text-shadow: 3px 3px 3px #000;
+	color: #fff;
 }
 
 #social {
+	margin-top: 20px;
 	bottom: 40%;
 }
 .social-icon {
 	display: inline-block;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin: 0 7px;
 }
 
@@ -67,7 +71,7 @@ a,a: active,a: focus,a: hover {
 
 .project {
 	display: inline-block;
-	background: rgba(220, 196, 152, 0.4);
+	background: rgba(220, 196, 152, 0.7);
 	border: 1px solid rgba(233, 155, 119, 0.4);
     border-radius: 4px;
     color: #27424B;
@@ -78,6 +82,7 @@ a,a: active,a: focus,a: hover {
     margin-left: 35px;
 	text-decoration: none;
 	color: #7D283D;
+	box-shadow: 5px 5px 5px;
 }
 
 .project:hover {
@@ -93,6 +98,10 @@ a,a: active,a: focus,a: hover {
 .project .description {
 	display: block;
 	background: rgba(233, 155, 119, 0.4);
+}
+
+.medium {
+	border-radius: 10px;
 }
 
 @media (max-width: 360px) {
