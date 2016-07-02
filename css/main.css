@@ -1,12 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: url(../img/bg.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #f7f1e6;
 	text-align: center;
-	-ms-overflow-style: none
 }
 
 h1,h2,h3,h4,p,ul {
@@ -21,15 +16,14 @@ a,a: active,a: focus,a: hover {
 	font-family: 'Leckerli One', cursive;
 	letter-spacing: 5px;
 	margin: 38px 0 0;
-	color:#fff;
-	text-shadow: 3px 3px 3px #000;
+	color: #3d2c0f;
 	font-size: 5em;
 
 }
 #content .small {
+	font-family: 'Leckerli One', cursive;
 	font-size: 2em;
-	color:#fff;
-	text-shadow: 3px 3px 3px #000;
+	color: #3d2c0f;
 	margin-top: 25px;
 }
 
@@ -49,7 +43,7 @@ a,a: active,a: focus,a: hover {
 }
 
 .post a:hover {
-	color: #fff;
+	text-decoration: underline;
 }
 
 #social {
