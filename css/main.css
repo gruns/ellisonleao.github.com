@@ -21,8 +21,8 @@ a,a: active,a: focus,a: hover {
 
 }
 #content .small {
-	font-family: 'Leckerli One', cursive;
-	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
 	color: #3d2c0f;
 	margin-top: 25px;
 }
